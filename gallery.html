@@ -1,0 +1,107 @@
+<%-- 
+    Document   : gallery
+    Created on : Jan 9, 2023, 12:14:43 AM
+    Author     : Mr_Parwez_03
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Gallery</title>
+        <link rel="stylesheet" href="teacher.css">
+        <link rel="icon" href="image/fnle.jpg">
+        <style>
+            .gallery{
+                 display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  border:2px solid white;
+            }
+            .desc:hover{
+                border:3px solid white;
+            }
+            #glr{
+                text-transform: uppercase;
+    text-align: center;
+    font-family: verdana;
+    font-size: 3em;
+    font-weight: 100;
+    color: white;
+    text-shadow: 1px 1px 1px white,
+        1px 2px 1px red,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px red,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+    margin: 50px
+                
+            }
+</style>
+    </head>
+    <body>
+            <%@include file="head.html" %>
+            <u><h4 id="glr">Gallery</h4></u>
+<div class="gallery">
+  <a target="_blank" href="image/std1 (1).jpeg">
+    <img src="image/std1 (1).jpeg" alt="Refresh" width="200" hieght="200">
+  </a>
+  <div class="desc">
+
+  <a target="_blank" href="image/std1 (2).jpeg">
+    <img src="image/std1 (2).jpeg" alt="Refresh" width="200" hieght="200">
+  </a>
+   </div>         
+  <div class="desc">
+
+  <a target="_blank" href="image/std1 (3).jpeg">
+    <img src="image/std1 (3).jpeg" alt="Refresh" width="200" hieght="200">
+  </a>
+</div>
+  <div class="desc">
+  <a target="_blank" href="image/std1 (4).jpeg">
+    <img src="image/std1 (4).jpeg" alt="Refresh" width="200" hieght="200">
+  </a>
+  </div><!-- comment -->
+  
+  <div class="desc">
+  <a target="_blank" href="image/std1 (5).jpeg">
+    <img src="image/std1 (5).jpeg" alt="Refresh" width="200" hieght="200">
+  </a>
+</div>
+          
+            <div class="desc">
+  <a target="_blank" href="image/std1 (6).jpeg">
+    <img src="image/std1 (6).jpeg" alt="Refresh" width="200" hieght="200">
+  </a>
+  </div>
+
+<div class="desc">
+  <a target="_blank" href="image/std1 (7).jpeg">
+    <img src="image/std1 (7).jpeg" alt="Refresh" width="200" hieght="200">
+  </a>
+  </div>
+          
+<div class="desc">        
+  <a target="_blank" href="image/std1 (8).jpeg">
+    <img src="image/std1 (8).jpeg" alt="Refresh" width="200" hieght="200">
+  </a>
+ </div>
+
+</div>
+
+            
+    </body>
+        <%@include file="footer.html" %>
+
+</html>

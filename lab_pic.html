@@ -1,0 +1,93 @@
+<%-- 
+    Document   : lab_pic
+    Created on : Jan 18, 2023, 1:03:22 PM
+    Author     : Mr_Parwez_03
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Lab_Picture</title>
+        <link rel="stylesheet" href="teacher.css">
+        <link rel="icon" href="image/fnle.jpg">
+        <style>
+            .lab_cont{
+                
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  border:2px solid white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+            
+  .lab:hover{
+      border:2px solid white; 
+  }
+  h1{
+text-transform: uppercase;
+    text-align: center;
+    font-family: verdana;
+    font-size: 3em;
+    font-weight: 100;
+    color: white;
+    text-shadow: 1px 1px 1px white,
+        1px 2px 1px red,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px red,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+    margin: 50px
+  }          
+            
+        </style>
+    </head>
+    <body>
+        <%@include file="head.html" %>
+
+        <u><h1>Lab_Picture </h1></u>      
+        <div class="lab_cont">
+            <div class="lab">
+             <a target="_blank" href="image/lab1.jpeg">
+                 <img src="image/lab1.jpeg" alt="Refresh" width="200" height="200">
+  </a>
+            </div>
+            
+            <div class="lab">
+             <a target="_blank" href="image/lab2.jpeg">
+    <img src="image/lab2.jpeg" alt="Refresh"width="200" height="200">
+  </a></div>
+            <div class="lab">
+             <a target="_blank" href="image/lab2.jpeg">
+    <img src="image/lab_.jpeg" alt="Refresh"width="200" height="200">
+             </a></div><!-- comment -->
+             <div class="lab">
+             <a target="_blank" href="image/lab2.jpeg">
+    <img src="image/lab2.jpeg" alt="Refresh"width="200" height="200">
+  </a></div>
+            <div class="lab">
+             <a target="_blank" href="image/lab3.jpeg">
+    <img src="image/lab3.jpeg" alt="Refresh" width="200" height="200">
+  </a></div>
+            <div class="lab">
+             <a target="_blank" href="image/lab4.jpeg">
+    <img src="image/lab4.jpeg" alt="Refresh" width="200" height="200">
+  </a></div>
+            <div class="lab">
+             <a target="_blank" href="image/lab5.jpeg">
+    <img src="image/lab5.jpeg" alt="Refresh" width="200" height="200">
+  </a></div><!-- parwez -->
+<!--            <div class="lab"><img src="image/lab1.jpeg" alt="Refresh"/></div>-->
+        </div>
+    </body>
+    <%@include file="footer.html" %>
+</html>

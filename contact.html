@@ -1,0 +1,99 @@
+<%-- 
+    Document   : contact us
+    Created on : 01-Oct-2022, 1:17:22 am
+    Author     : HP
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contact</title>
+          <link rel="icon" href="image/fnle.jpg">
+        <link rel="stylesheet" href="teacher.css">
+        <style>
+            .contc{
+/*                width: 25%;*/
+                padding:10px;
+               text-align: center;
+               margin: 20px;
+               
+            }
+            .l{
+                border:5px solid white;
+                padding:10px;
+                border-radius: 30px;
+            }
+            .r{
+                border:5px solid white;
+                padding:10px;
+                border-radius: 30px;
+            }
+            p{
+                color:white;
+                font-weight: bold;
+            }
+            .l:hover{
+                background-color: #003333;
+            }
+            .r:hover{
+                background-color: #003333; 
+               
+            }
+            #phone{
+                border-radius: 50px;
+                margin: 20px;
+            }
+            .contact{
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            #c{
+                text-transform: uppercase;
+    text-align: center;
+    font-family: verdana;
+    font-size: 3em;
+    font-weight: 100;
+    color: white;
+    text-shadow: 1px 1px 1px white,
+        1px 2px 1px red,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px red,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+    margin: 50px;
+  } 
+            
+            </style>
+    </head>
+    <body>
+        <%@include file="head.html" %>
+        <h2 id="c"><u>Contact</u></h2>
+        <div class="contact">
+ <img src="image/call.jpg" alt="Refresh" width="300" height="250" id="phone"/>
+         <div class="contc">           
+   <div class="l">
+       <p bgcolor="red"><u>Admin :</u></p><!-- parwez -->
+  <a href = "mailto:admin@gmail.com"><p>admin@gmail.com</p></a><!-- parwez -->
+    </div>
+<div class="r">
+    <p><u>Principal :</u></p>
+     <a href = "mailto:principal@gmail.com"><p>principal@gmail.com</p></a>
+</div>
+         </div>
+        </div>
+  </body>
+  <%@include file="footer.html" %>
+
+
+</html>

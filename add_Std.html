@@ -1,0 +1,116 @@
+<%-- 
+    Document   : add_Std
+    Created on : Jan 16, 2023, 11:48:49 AM
+    Author     : Mr_Parwez_03
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Add Student</title>
+        <style>
+            .univer{
+                border-radius: 60px;
+            }
+            .mm{
+                display: grid;
+                grid-template-columns: auto auto auto ;
+                margin: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mm">
+        <img src="image/univrlogo.JPG" alt="Refresh" width="120" height="120" class="univer"/>
+        <h1><u>Maulana Mazharul Haque Arabic & Persian University</u></h1>
+                <img src="image/laptop.JPG" alt="Refresh" width="120" height="120" class="univer"/>
+
+        </div>
+        <form>
+            <label>Name Of Applicant</lebel>
+            <input type="text">
+            
+                <label>Mothers Name</label><!-- parwez -->
+                <input type="text"/><!-- comment -->
+                    <label>Fathers Name</label>
+                    <input type="text"/><br><br>
+                   <u>Permanent Address</u><!-- parwez -->
+                    <textarea id="add" name="name" rows="2" cols="40"></textarea>
+                    <label>District</label>
+                    <input type="text"/>
+                    <label>Mobile No</label><!-- parwez -->
+                    <input type="number"/><br><br>
+                    <label>Pin-Code</label><!-- parwez -->
+                    <input type="number">                    
+                   <u>Corresponding Address</u><!-- parwez -->
+                    <textarea id="add" name="name" rows="2" cols="40"></textarea>
+                    <label>District</label>
+                    <input type="text">
+                    <label>Mobile No</label><!-- parwez -->
+                    <input type="number"/>
+                    <label>Pin-Code</label><!-- parwez -->
+                    <input type="number">
+                    <label>Registration No</label><!-- parwez -->
+                    <input type="number">
+                    <label>Name Of Course</label>
+                    <select>
+                        <option>BCA</option>
+                        <option>BBA</option><!-- comment -->
+                        <option>BlIS</option>
+                    </select>
+                    <label>Course</label><!-- parwez -->
+                    <input type="text"><!-- parwez -->
+                    <label>Name of KRC</label>
+                    <input type="number">
+                    <label>Date Of Birth</label><!-- comment -->
+            <input type="text">
+            <label>Gender</label><!-- comment -->
+           
+            <input type="radio" name="male"/>Male           
+            <input type="radio" name="male"/>Female
+            <input type="radio" name="male"/>Others
+            
+            <label>Nationality</label><!-- comment -->            
+            <select><!-- comment -->
+                <option>Indian</option>
+                <option>NRI</option>
+                <option>Foreigner</option>     
+            </select>
+            
+            <label>Religion</label>
+            <input type="text">
+            <label>Category</label>
+            <select>
+                <option>SC</option>
+                <option>ST</option><!-- parwez -->
+                <option>EBC</option>
+                <option>OBC</option>
+                <option>Physically Handicapped</option>
+                <option>General</option>
+            </select>
+            
+            <label>Background</label>
+            <select>
+            <option>Urban</option>
+            <option>Rural</option>
+            <option>Tribal</option>
+            </select>
+            
+            <label>Marital Status</label>
+            <select>
+            <option>Married</option>
+            <option>Unmarried</option>
+            <option>Separated</option>
+            <option>Widowed</option>
+            </select>
+            
+            <label>Status</label>
+            <select>
+                <option>Employed</option>
+                <option>Unemployed</option>                   
+            </select>
+        </form>
+    </body>
+</html>

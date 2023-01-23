@@ -1,0 +1,41 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 08-Oct-2022, 1:48:03 am
+    Author     : HP
+*/
+* {
+  font-family: helvetica, arial, verdana, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+th,td {
+  text-align: left;
+  border: 1px solid #000;
+  padding: 10px;
+  font-size: 11pt;
+  width: 25%;
+}
+
+.fee_view {
+  width: 100%;
+  
+}
+
+.disclaimer_copy {
+  font-size: 10pt;
+}

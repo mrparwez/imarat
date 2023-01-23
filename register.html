@@ -1,0 +1,124 @@
+<%-- 
+    Document   : register
+    Created on : 30-Sep-2022, 10:08:41 am
+    Author     : HP
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Registration Form</title><!-- Parwez Code Here -->
+    <link rel="icon" href="image/fnle.jpg">
+    <link rel="stylesheet" href="teacher.css">
+    <style>
+        body{
+            background-color: #006666;
+        }
+        .regis{
+            border: 2px solid white;
+            text-align: center;
+            margin-left: 35%;
+            margin-right: 35%;
+            padding:50px;
+            background-color: #003333;
+            border-radius: 10px;
+            color:white;
+            margin-top: 10px;
+            margin: 100px;
+        }
+        label{
+            padding: 10px;
+        }
+    </style><!-- parwez alam -->
+
+  </head>
+  <body>
+      <%@include file="head.html" %>
+       <div class="regis">   
+           <h2 style="border:3px solid white; border-radius:20px; padding: 6px; text-shadow:3px 2px 3px cyan;">Register For Enquiry</h2><br><br>
+        <form id="register" method="post">
+        <table align="center" cellpadding = "10">
+
+          <label>First Name</label>
+          
+          <input type="text" name="fname" id="name"
+                 placeholder="Enter Your First Name" required="">
+          
+          <label>Last Name</label>
+         
+          <input type="text" name="lname" id="name"
+                 placeholder="Enter Your Last Name" required="">
+             
+          <label>Mobile</label>
+          
+          <input type="text" name="Mobile" id="name"
+              placeholder="Enter Your Valid Mobile No" required="">
+                 
+          <label>State</label>
+          <select>
+            <option>select</option>
+            <option>Andhra Pradesh</option>
+            <option>Assam</option>
+            <option>Bihar</option><!-- parwez -->
+            <option>Chhatisgarh</option>
+            <option>Dadra & Nagar Haveli</option>
+            <option>Daman & Diu</option>
+            <option>Delhi</option>
+            <option>Goa</option>
+            <option>Gujrat</option><!-- parwez -->
+            <option>Haryana</option>
+            <option>Himachal Pradesh</option>
+            <option> Jammu & Kasmin</option><!-- parwez -->
+            <option>Jharkhand</option><!-- parwez -->
+            <option>Karnatka</option>
+            <option>Kerla</option>
+            <option>Ladakh</option><!-- parwez -->
+            <option>Lakshawdweep</option>
+            <option>Madhya paradesh</option>
+            <option>Maharashtra</option>
+            <option>Manipur</option><!-- parwez -->
+            <option>Meghalay</option><!-- parwez -->
+            <option>Mizoram</option><!-- parwez -->
+            <option>Nagaland</option><!-- parwez -->
+            <option>Orissa</option>
+            <option>Punjab</option>
+            <option>Panducherry</option><!-- parwez -->
+            <option>Rajsthan</option><!-- parwez -->
+            <option>Sikkim</option><!-- parwez -->
+            <option>Tamil Nadu</option>
+            <option>Tripura</option><!-- parwez -->
+            <option>Utter Pradesh</option>
+            <option>Utrakhand</option><!-- parwez -->
+            <option>West Bangal</option>
+        </select>
+          <br><br>
+           <label>Gender</label>
+          
+          &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="Gender" id="Male" required="">
+          &nbsp;
+          <span id="Male">Male</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="Gender"
+                 id="Female" required="">
+            &nbsp;
+            <span id="Female">Female</span>
+            &nbsp;
+            <input type="radio" name="Gender" id="Other" required="">
+            &nbsp;            
+
+            <span id="other">Other</span>
+            <br><br>
+            <input type="submit" name="submit" value="Submit"
+            id="submit">
+        </table>
+        </form>
+      </div>
+       
+  </body>
+   <%@include file="footer.html" %>
+
+</html>
+ 
