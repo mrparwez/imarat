@@ -1,10 +1,4 @@
-<%-- 
-    Document   : test
-    Created on : Jan 7, 2023, 1:52:33 AM
-    Author     : Mr_Parwez_03
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,6 +7,9 @@
         <title>history</title>
         <link rel="stylesheet" href="teacher.css">
         <link rel="icon" href="image/fnle.jpg">
+	<link rel="stylesheet" href="css/footer.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
         <style>
             #p{
                text-transform: uppercase;
@@ -37,11 +34,172 @@
     1px 30px 60px rgba(16,16,16,0.4);
     margin: 50px;
             }
+
         </style>
     </head><!-- parwez -->
     
-    <body>
-        <%@include file="head.html" %>
+    <body><div class="header">
+        <div class="left" >
+                <img src="image/fnle.jpg" width="120" height="117" style="border-radius: 60px; margin-top:15px;"/>
+
+        </div>
+  
+        
+             <div class="midle">
+                 <h2 align="left"style="text-shadow: 2px 2px #ff0000;font-weight: bold;padding-top: 20px; padding-left: 50px; font-size: 30px;">I.I.C.E<br>&nbsp;&nbsp;&nbsp;Imarat Institute of Computer & Electronic's PATNA</h2>
+                    <h2 align="right"style="text-shadow: 2px 2px #ff0000;font-weight: bold;padding-top: 20px; padding-left: 10px; font-size: 30px;">امارت انسٹی ٹیوٹ آف کمپیوٹر  اینڈ الیکٹرانکس پٹنہ </h2>
+                    </span>
+                    <a href="register.html"> <h4 style="width: 160px; border: 2px solid white; margin-left: 100%; font-weight: bold; font-size: 20px; background-color: red;color: white; border-radius: 3px; ">Register/Enquiry</h4></a>
+                    
+
+                    <!--            <p class="blink">One Of The Reported School In PATNA</p><br>-->
+           
+                 </div>
+        </div>
+<div class="manu">
+    
+             <ul>
+                 <li><div class="homeh">
+                         <a href="Home.html"><i class="fa-solid fa-house-user"></i> Home</a>
+                     </div>
+                 </li>
+                 <li>
+                     <a href="#">About Us</a>
+              <div class="manu1">
+               <ul>
+                     <li><a href="history.html">History</a></li><!-- parwez -->
+                     <li><a href="vision.html">Vision & Mission</a></li><!-- parwez -->
+                     <li><a href="#">Function & Duties</a></li><!-- parwez -->
+                     <li><a href="About.html">About Principal</a></li><!-- parwez -->
+                     <li><a href="gallery.html">Gallery</a></li>
+                     <li><a href="lab_pic.html">Lab Photo</a></li>
+               </ul>
+
+                 </div>
+                </li>
+                 <li><a href="#"><i class="fa-solid fa-location-pin"></i> Site Location</a>
+                     <div class="manu1">
+                         <ul>
+                             <li><a href="locat.html">Location</a></li>
+                             <li><a href="H3HC+6M2 Maulana Minnatullah Rahmani Technical Institute and Para Medical College">Live Loaction </a></li>
+  
+                         </ul>
+                     </div>
+                 </li>
+                 
+                 <li>
+                     <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a> </li>
+                 <li>
+                     <a href="feedback.html"><i class="fa-solid fa-comment"></i> Feedback</a>
+                 </li>
+                 <li><a href="#"><i class="fa-solid fa-download"></i> Download</a>
+                 <div class="manu1">
+               <ul>
+                     <li><a href="https://mmhapu.ac.in/BCA.htm">Check Here BCA Syllabus</a></li><!-- parwez -->
+                     <li><a href="https://mmhapu.ac.in/BBA.htm">Check Here BBA Syllabus</a></li><!-- parwez -->
+                     <li><a href="https://mmhapu.ac.in/BJMC.htm">Check Here BJMC Syllabus</a></li><!-- parwez -->
+                     <li><a href="pdf/fee_structure.pdf">Fee Structure</a></li><!-- parwez -->
+                     <li><a href="Examination_Form.html">Examination Form</a></li><!-- parwez -->
+                     <li><a href="pdf/Prospectus_new.pdf"">Prospectus</a></li><!-- parwez -->
+               </ul>
+                     
+                 </li><!-- parwez -->
+                 <li><a href="#"><i class="fa-sharp fa-solid fa-lock"></i> Sign In</a>
+                 <div class="manu1">
+                     <ul>
+                         <li> <i class="fa-solid fa-lock"></i> <a href="login.html">As Admin</a></li>
+                         <li>  <i class="fa-solid fa-chalkboard-user"></i> <a href="login.html">As Principal</a></li>
+                         <li> <i class="fa-solid fa-chalkboard-user"></i> <a href="login.html">As Teacher</a></li>
+                     </ul>
+                 </div>
+                 </li>
+                 
+             </ul><!-- comment -->
+             
+             
+</div>
+                     <center>
+      <div id="slider">
+   <ul id="slideWrap" > 
+       <li><img src="image/imarat1.jpeg" alt="Refresh" ></li>
+      <li><img src="image/imarat2.jpeg" alt="Refresh"></li>
+      <li><img src="image/imarat3.jpeg" alt="Refresh"></li>
+      <li><img src="image/university.jpg" alt="Refresh"></li>
+      <li><img src="image/lab2.jpeg" alt="Refresh"></li>
+ </ul>
+            <a id="prev" href="#">&#8810;</a>
+        <a id="next" href="#">&#8811;</a>
+
+</div>  
+    </center>
+  <script>
+    var responsiveSlider = function() {
+var slider = document.getElementById("slider"); 
+var sliderWidth = slider.offsetWidth;
+var slideList = document.getElementById("slideWrap");
+var count = 1;
+var items = slideList.querySelectorAll("li").length;
+var prev = document.getElementById("prev");
+var next = document.getElementById("next");
+
+window.addEventListener('resize', function() {
+  sliderWidth = slider.offsetWidth;
+});
+
+var prevSlide = function() {
+  if(count > 1) {
+    count = count - 2;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if(count = 1) {
+    count = items - 1;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+};
+
+var nextSlide = function() {
+  if(count < items) {
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if(count = items) {
+    slideList.style.left = "0px";
+    count = 1;
+  }
+};
+
+next.addEventListener("click", function() {
+  nextSlide(); 
+});
+
+prev.addEventListener("click", function() {
+  prevSlide();
+});
+
+setInterval(function() {
+  nextSlide()
+}, 5000);
+
+};
+
+window.onload = function() {
+responsiveSlider();  
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-10px";
+  }
+}
+
+
+  </script>
         <h1 id="p"><u>ABOUT MANAGEMENT</u></h1>
         <div class="manage">
             <div class="manage1">
@@ -52,12 +210,72 @@
                     Bihar State Universities Act. 1976 (as amended by Bihar Act.9, 1992) with effect from 10 April 1998 
                     (vide MHRD, Govt. of Bihar notification no. 1998 dated 22 November 2006). The Jurisdiction of this University is whole of Bihar and it is 
                     recognized under 2(f) of the UGC Act 1956. 
-                    The University is enrolled as a member of Association of Indian Universities (AIU) New Delhi with effect from December 2009.
+                    The University is enrolled as a member of Association of Indian Universities (AIU) New Delhi with effect from December 2009.</p>
             </div>
     </div>
         
     </body>
-        <%@include file="footer.html" %>
+        <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+                            <h3>I.I.C.E&nbsp; <span>Patna</span></h3>
+
+				<p class="footer-links">
+					<a href="Home.html" class="link-1">Home</a>
+					
+					<a href="locat.html">Location</a>
+				
+					<a href="#">Gallery</a>
+				
+					<a href="About.html">About</a>
+					
+					<a href="feedback.html">Feedback</a>
+					
+					<a href="contact.html">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Imarat Institute o © 2015</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+                                    <i class="fa-sharp fa-solid fa-location-dot"></i><!-- parwez -->
+                                    <p>801505, Tam Tam Padao<br> Phulwari-Sharif, PATNA</p>
+				</div>
+
+				<div>
+                                        <i class="fa-solid fa-phone"></i>				
+                                        <p>+91-9431838323</p>
+				</div>
+
+				<div>
+                                    <i class="fa-sharp fa-solid fa-envelope"></i><!-- comment -->
+                                    <p><a href="mailto:principaliice@gmail.com">principaliice@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About Developer</span>
+                                        Website Designed and Developed by <br><b>PARWEZ ALAM</b><br> Student of <b>( I.I.C.E )</b> Phulwari-Sharif PATNA
+                                </p>
+
+				<div class="footer-icons">
+
+                                        <a href="mailto:orcl.parwez@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+					<a href="https://twitter.com/itz_parwez?t=KP-hHNMghCRdKVVHK-Q37A&s=09"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/parwez-alam-b96b6522b"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://github.com/mrparwez"><i class="fa-brands fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
 
 </html>
 

@@ -1,10 +1,4 @@
-<%-- 
-    Document   : attendance
-    Created on : Jan 7, 2023, 12:00:43 PM
-    Author     : Mr_Parwez_03
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,9 +6,224 @@
         <title>Attendance</title>
         <link rel="icon" href="image/fnl.JPG">
         <link rel="stylesheet" href="teacher.css"/>
+    <link rel="stylesheet" href="css/footer.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
     </head>
     <body>
-        <%@include file="head.html" %>
+        
+
+<div class="header">
+        <div class="left" >
+                <img src="image/fnle.jpg" width="120" height="117" style="border-radius: 60px; margin-top:15px;"/>
+
+        </div>
+  
+        
+             <div class="midle">
+                 <h2 align="left"style="text-shadow: 2px 2px #ff0000;font-weight: bold;padding-top: 20px; padding-left: 50px; font-size: 30px;">I.I.C.E<br>&nbsp;&nbsp;&nbsp;Imarat Institute of Computer & Electronic's PATNA</h2>
+                    <h2 align="right"style="text-shadow: 2px 2px #ff0000;font-weight: bold;padding-top: 20px; padding-left: 10px; font-size: 30px;">امارت انسٹی ٹیوٹ آف کمپیوٹر  اینڈ الیکٹرانکس پٹنہ </h2>
+                    </span>
+                    <a href="register.html"> <h4 style="width: 160px; border: 2px solid white; margin-left: 100%; font-weight: bold; font-size: 20px; background-color: red;color: white; border-radius: 3px; ">Register/Enquiry</h4></a>
+                    
+
+                    <!--            <p class="blink">One Of The Reported School In PATNA</p><br>-->
+           
+                 </div>
+        </div>
+<div class="manu">
+    
+             <ul>
+                 <li><div class="homeh">
+                         <a href="Home.html"><i class="fa-solid fa-house-user"></i> Home</a>
+                     </div>
+                 </li>
+                 <li>
+                     <a href="#">About Us</a>
+              <div class="manu1">
+               <ul>
+                     <li><a href="history.html">History</a></li><!-- parwez -->
+                     <li><a href="vision.html">Vision & Mission</a></li><!-- parwez -->
+                     <li><a href="#">Function & Duties</a></li><!-- parwez -->
+                     <li><a href="About.html">About Principal</a></li><!-- parwez -->
+                     <li><a href="gallery.html">Gallery</a></li>
+               </ul>
+
+                 </div>
+                </li>
+                 <li><a href="#"><i class="fa-solid fa-location-pin"></i> Site Location</a>
+                     <div class="manu1">
+                         <ul>
+                             <li><a href="locat.jsp">Location</a></li>
+                             <li><a href="https://www.google.com/maps/dir/25.568384,85.
+                                    0752824/H3HF%2BG64,+Chauraha,+Phulwari+Sharif+Road,+Jagdeo+Path+
+                                    -+Anisabad+Rd,+Phulwari+Sharif,+Patna,+Bihar+801505/@25.5736748,85.
+                                    0708935,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x39f2a82835ebb88d:
+                                    0xc2f152eedcad1e76!2m2!1d85.0730741!2d25.5787629">Live Loaction </a></li>
+  
+                         </ul>
+                     </div>
+                 </li>
+                 
+                 <li>
+                     <a href="contact us.jsp"><i class="fa-solid fa-phone"></i> Contact Us</a> </li>
+                 <li>
+                     <a href="#"><i class="fa-solid fa-comment"></i> Feedback</a>
+                 </li>
+                 <li><a href="#"><i class="fa-solid fa-download"></i> Download</a>
+                 <div class="manu1">
+               <ul>
+                     <li><a href="Admission.html">Admission Form</a></li><!-- parwez -->
+                     <li><a href="pdf/Fee_Structur.pdf">School Fee</a></li><!-- parwez -->
+                     <li><a href="Examination_Form.html">Examination Form</a></li><!-- parwez -->
+                     <li><a href="pdf/Prospectus_new.pdf">Prospectus</a></li><!-- parwez -->
+               </ul>
+                     
+                 </li><!-- parwez -->
+                 <li><a href="#"><i class="fa-sharp fa-solid fa-lock"></i> Sign In</a>
+                 <div class="manu1">
+                     <ul>
+                         <li> <i class="fa-solid fa-lock"></i> <a href="login.html">As Admin</a></li>
+                         <li>  <i class="fa-solid fa-chalkboard-user"></i> <a href="login.html">As Principal</a></li>
+                         <li> <i class="fa-solid fa-chalkboard-user"></i> <a href="login.html">As Teacher</a></li>
+                     </ul>
+                 </div>
+                 </li>
+                 
+             </ul><!-- comment -->
+             
+             
+</div>
+
+<table class="attendance-table">
+    <tbody><tr class="attendance-table-head">
+    <th class="table-head-td-course">Course</th>
+    <th class="table-head-td">Total Classes</th>
+    <th class="table-head-td">Present</th>
+    <th class="table-head-td">Absent</th>
+    <th class="table-head-td">Details</th>
+    </tr>
+    <tr class="attendanceRow">
+     
+    <td class="attendanceRowCourse">PAKISTAN STUDIES (031309014)</td>
+    <td class="attendanceRowStat">12</td>
+    <td class="attendanceRowStat">10</td>
+    <td class="attendanceRowStat">2</td>
+    <td class="attendanceRowStat">
+    <a href="javascript:void(0)" onclick="GetCourseInfo('031309014')">View Summary</a>
+    </td>
+    </tr>
+    <tr class="attendanceRow">
+     
+    <td class="attendanceRowCourse">ELECTRONICS (031309031)</td>
+    <td class="attendanceRowStat">13</td>
+    <td class="attendanceRowStat">9</td>
+    <td class="attendanceRowStat">4</td>
+    <td class="attendanceRowStat">
+    <a href="javascript:void(0)" onclick="GetCourseInfo('031309031')">View Summary</a>
+    </td>
+    </tr>
+    <tr class="attendanceRow">
+     
+    <td class="attendanceRowCourse">ELECTRONICS (LAB) (031309034)</td>
+    <td class="attendanceRowStat">10</td>
+    <td class="attendanceRowStat">8</td>
+    <td class="attendanceRowStat">2</td>
+    <td class="attendanceRowStat">
+    <a href="javascript:void(0)" onclick="GetCourseInfo('LAB)')">View Summary</a>
+    </td>
+    </tr>
+    <tr class="attendanceRow">
+     
+    <td class="attendanceRowCourse">TECHNICAL ENGLISH (031309120)</td>
+    <td class="attendanceRowStat">12</td>
+    <td class="attendanceRowStat">11</td>
+    <td class="attendanceRowStat">1</td>
+    <td class="attendanceRowStat">
+    <a href="javascript:void(0)" onclick="GetCourseInfo('031309120')">View Summary</a>
+    </td>
+    </tr>
+    <tr class="attendanceRow">
+     
+    <td class="attendanceRowCourse">PROBABILITY &amp; STATISTICS (031309050)</td>
+    <td class="attendanceRowStat">13</td>
+    <td class="attendanceRowStat">12</td>
+    <td class="attendanceRowStat">1</td>
+    <td class="attendanceRowStat">
+    <a href="javascript:void(0)" onclick="GetCourseInfo('031309050')">View Summary</a>
+    </td>
+    </tr>
+    <tr class="attendanceRow">
+     
+    <td class="attendanceRowCourse">COMMUNICATION SKILLS (031309023)</td>
+    <td class="attendanceRowStat">10</td>
+    <td class="attendanceRowStat">8</td>
+    <td class="attendanceRowStat">2</td>
+    <td class="attendanceRowStat">
+    <a href="javascript:void(0)" onclick="GetCourseInfo('031309023')">View Summary</a>
+    </td>
+    </tr>
+    </tbody></table>
     </body>
-	<%@include file="footer.html" %>
+	<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+                            <h3>I.I.C.E&nbsp; <span>Patna</span></h3>
+
+				<p class="footer-links">
+					<a href="Home.html" class="link-1">Home</a>
+					
+					<a href="locat.html">Location</a>
+				
+					<a href="#">Gallery</a>
+				
+					<a href="About.html">About</a>
+					
+					<a href="feedback.html">Feedback</a>
+					
+					<a href="contact.html">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Imarat Institute o © 2015</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+                                    <i class="fa-sharp fa-solid fa-location-dot"></i><!-- parwez -->
+                                    <p><span>801505, Tam Tam Padao</span> Phulwari-Sharif, PATNA</p>
+				</div>
+
+				<div>
+                                        <i class="fa-solid fa-phone"></i>				
+                                        <p>+91-9431838323</p>
+				</div>
+
+				<div>
+                                    <i class="fa-sharp fa-solid fa-envelope"></i><!-- comment -->
+                                    <p><a href="mailto:principaliice@gmail.com">principaliice@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About Developer</span>
+                                        Website Designed and Developed by <br><b>PARWEZ ALAM</b><br> Student of <b>( I.I.C.E )</b> Phulwari-Sharif PATNA
+                                </p>
+
+				<div class="footer-icons">
+
+                                        <a href="mailto:orcl.parwez@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+					<a href="https://twitter.com/itz_parwez?t=KP-hHNMghCRdKVVHK-Q37A&s=09"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/parwez-alam-b96b6522b"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://github.com/mrparwez"><i class="fa-brands fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
 </html>
